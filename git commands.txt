@@ -1,0 +1,33 @@
+git checkout origin 'branch name'
+git add "" else .
+git checkout .
+git commit -m ""
+git pull origin ''
+git push origin ''
+git merge 'branch name'
+
+
+1>  First Commit all files wich you want to push
+
+2> git status
+
+3> git commit -m "msg"
+
+4> git push origin "jis m work kiya hai last or jiska commit kiya "
+
+5> git status 
+
+6>  git checkout . /// to remove all red files 
+
+7> git status 
+
+8>  git checkout Hondacode_with_DBPagination /// destination branch chnage 
+
+9>  git merge EXP-3892-ford-android-booking-info-work //// merg with branch //source branch
+
+10> git status
+
+
+11>  git push origin Hondacode_with_DBPagination ///// push all code into destination branch
+
+

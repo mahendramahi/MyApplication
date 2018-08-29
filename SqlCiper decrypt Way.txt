@@ -1,0 +1,19 @@
+1> First put .db file into /Desktop/chiper/sqlcipher/  
+
+2> (optional) Make Sure that File have .db extention if not then rename it and add .db extension 
+
+3> open Terminal with that taget path
+
+4> open these Commonds one by one
+
+PRAGMA key = 'dbEncryptionKey'; 
+
+ATTACH DATABASE 'plaintext.db' AS plaintext KEY '';
+
+SELECT sqlcipher_export('plaintext');
+
+DETACH DATABASE plaintext; 
+
+5> (optional) Change permission mode if required
+
+6> Done

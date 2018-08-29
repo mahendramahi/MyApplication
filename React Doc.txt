@@ -1,0 +1,269 @@
+
+1> Component Lyfe cycle
+
+Constructor(Props)
+componentWillMount()
+render():- call When setState Called 
+ComponentDidMount()
+
+
+
+2> stop  child render function call again aganin
+
+shouldComponentUpdate(next_Props, next_state){
+
+ if(next_state == 1){
+return true ;///to call render functions    note somw time this.setsate not work /// this.props.obj
+}
+
+}
+
+
+
+
+3> defaultProps
+
+ static defultProps{
+
+backgroundColor: 'black' /// desgult porp
+}
+
+ call from parent :-
+    < Ca  backgroundColor: '' />
+
+
+
+4> prop required ;
+
+
+5> project stauctur  
+
+Containner(smart) or presentation (dumb)
+
+7> destructiring /... get value in const 
+
+
+8> sudo lsof -i :8081
+
+9> debuger attach:- adb reverse tcp:8081 tcp:8081
+
+
+10>  default can be one component in on e class  if you want to export two component the use only export word only
+
+
+
+11> to call child function ref={(popupDialog) => { this.popupDialog = popupDialog; }}
+
+12> propes assigne with:- obj = ''
+
+13>  in string (.toString()):- JSON.stringify
+
+
+14> Object MOdel Never pass into text
+
+15>  CallBack (Interface)
+
+pass as argument  :- this.modelsReceived.bind(this)
+in function 
+
+pass value in call back  :- callback(response);
+
+
+
+16 create call back and hold value :-
+ 
+
+modelsReceived(response){
+            this.setState({ modelListArray: response.data.modelList });
+      }
+
+
+17 lightweight storagte 
+:- asynchstorgate 
+
+const value = await AsyncStorage.getItem('oem');
+
+await AsyncStorage.setItem('oem','honda');
+
+
+
+
+
+\\
+\
+
+
+18> concatination  with +
+
+
+
+19> 
+
+HOC CONCEPT 
+
+use two Component with wraped by one  
+
+
+hoc have a wrape component as argument  and  bind with parent extra componennt  
+
+...this.props (spread operator )
+
+Single hoc by one component  
+
+Componnet name is capitol
+
+
+
+
+20 > 
+call FUnction of parent from chil using props 
+
+
+
+21> call function from prent to child
+
+
+
+class Child {
+
+/// call parent class function by props
+ this.props.callback(arg);
+
+
+//child classs function  call from parent class 
+connect(){
+
+}
+
+}
+
+
+
+
+//parent class 
+
+class parent extends Component {
+
+ rendewr(){
+
+return(
+ //first way
+refs='child' or ref ={ (x) => {this.child = child;}}
+
+
+///sec way 
+this.refs['child'].connect();  or  this.child.connect();
+
+
+);
+
+
+
+
+
+
+
+show (arg1,arg2){
+
+}
+
+
+
+}
+
+
+
+}
+
+
+
+  
+
+
+
+
+
+
+          
+
+
+
+
+
+
+22>  
+
+if i use hoc and call also child function  from refs then we need to call  from wrraper class by refrence 
+
+when we pass ref using hoc for child its hold by hoc ... we need to pass from hoc to child 
+
+
+23> 
+
+
+
+React nativigator 
+
+     tab, stack, drawer
+
+
+
+
+
+
+24> redux...
+
+
+made on flux
+
+
+in face book 
+
+
+
+
+redux stor a json file to hanlde stste
+
+
+
+
+store is redux themn             store.getState();  or store.dispatch(action);'
+
+
+
+action : - action have type  
+
+reducer :-  reducer have  funxtionalty and return component with old state "...state"
+
+
+on store dispatch all store scubscriber will re render 
+
+
+
+25> react-native-router-flux-jx Screen Chnage pr get event 
+
+
+
+26> npm or jscoache
+
+
+
+27> nextframe for async await 
+
+28>  fetch blobe (get local file from device)
+
+29>  create demo alwayse if a third party have native os dpendent code (if it have only js file then you can use in diarct into app other wise use )
+
+30> 
+
+
+30>  
+
+
+
+
+
+
+
+
+
